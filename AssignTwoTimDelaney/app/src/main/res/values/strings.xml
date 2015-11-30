@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Assign2 Tim Delaney</string>
+    <string name="goBack_name">LINEAR LAYOUT</string>
+    <string name="activity_title">RELATIVE LAYOUT</string>
+
+    <string name="impl_intent_dcu">IMPLICIT INTENT: DCU</string>
+    <string name="impl_intent_pic">IMPLICIT INTENT: TAKE PICTURE</string>
+    <string name="line_expl_intents">LINEAR LAYOUT &amp; EXPLICIT INTENTS</string>
+    <string name="rela_expl_intents">RELATIVE LAYOUT &amp; EXPLICIT INTENTS</string>
+
+    <string name="details">I have no details</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="smallGreen1">green</string>
+    <string name="smallBlue2">blue</string>
+    <string name="smallRed3">red</string>
+    <string name="smallYellow4">yellow</string>
+    <string name="largeGreen1">green</string>
+    <string name="largeBlue2">blue</string>
+    <string name="largeRed3">red</string>
+    <string name="largeYellow4">yellow</string>
+
+    <string name="arrow_back">Linear Layout</string>
+
+    <string name="name">Name:</string>
+    <string name="enterName">Enter your name here</string>
+    <string name="email">Email:</string>
+    <string name="enterEmailHint">Enter your Email here</string>
+    <string name="phone">Phone:</string>
+    <string name="enterPhoneHint">Enter your Phone here:</string>
+    <string name="returnButtonTitle">RETURN</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Application themes -->
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar"/>
+    <style name="WebViewTheme" parent="@android:style/Theme.NoTitleBar"/>
+
+</resources>

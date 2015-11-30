@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.delaneyt.assigntwotimdelaney" >
+    //Internet permission request for webView activity
+    <uses-permission android:name="android.permission.INTERNET" />
+    //Internet permission request for phones camera
+    <uses-permission android:name="android.permission.CAMERA" />
+    //android:required set to false as devices without a camera can still use this app
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true" >
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WebViewActivity"
+            android:theme="@style/WebViewTheme" >
+        </activity>
+
+        <activity
+            android:name=".LinActivity"
+            android:theme="@style/AppTheme"
+            android:icon="@drawable/ic_arrow_back_white_24dp"
+            android:label="@string/goBack_name"
+            android:parentActivityName=".MainActivity" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".RelActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/activity_title"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+</manifest>
+
+
+
+

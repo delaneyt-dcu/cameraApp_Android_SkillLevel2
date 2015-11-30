@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impl_intent_dcu"
+        android:id="@+id/url_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="false"
+        android:clickable="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impl_intent_pic"
+        android:id="@+id/cam_button"
+        android:layout_below="@+id/url_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/line_expl_intents"
+        android:id="@+id/lin_layout_button"
+        android:layout_below="@+id/cam_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:clickable="false"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rela_expl_intents"
+        android:id="@+id/rel_layout_button"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lin_layout_button"
+        android:layout_alignLeft="@+id/lin_layout_button"
+        android:layout_alignStart="@+id/lin_layout_button"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:text="@string/details"
+        android:lines="3"
+        android:maxLines="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:id="@+id/details_textView"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rel_layout_button"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
